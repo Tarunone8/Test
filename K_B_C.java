@@ -1,5 +1,5 @@
 package K_B_C;
-
+import java.util.Scanner;
 public class K_B_C {
     public static void main(String[] args) {
 
@@ -382,4 +382,5 @@ public class K_B_C {
 
 
 }}
+
 
