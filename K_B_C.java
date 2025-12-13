@@ -1,7 +1,16 @@
 package K_B_C;
 import java.util.Scanner;
-public class K_B_C {
+public  class K_B_C {
     public static void main(String[] args) {
+        int l1=0;
+        int l2=0;
+        int l3=0;
+
+        String lifeline1="press 1 to use 50/50";
+        String lifeline2="press 2 to use flip the question";
+        String lifeline3="press 3 to use hint";
+
+
 
         Scanner sc=new Scanner(System.in);
 
@@ -36,11 +45,11 @@ public class K_B_C {
         System.out.println();
 
         System.out.println("life lines- " );
-        System.out.println("press 1 to use 50/50");
-        System.out.println("press 2 to use flip the ques");
-        System.out.println("press 3 to use hint ");
+        System.out.println(lifeline1);
+        System.out.println(lifeline2);
+        System.out.println(lifeline3);
 
-        char input= sc.next().charAt(0);
+       char  input= sc.next().charAt(0);
 
         if(input=='A'){
             System.out.println("||correct answer||");
@@ -55,14 +64,18 @@ public class K_B_C {
                if(ip=='A')
                {
                     System.out.println("correct Answer");
+                    l1=1;
 
                }
                else {
                    System.out.print("wrong answer!!!!!");
                    System.out.print("your game has been quit!!!!!");
-                   System.out.println(name);
+                   System.out.println("thankyou Mr./Mrs."+name+" for playing");
+                   System.out.println("your score= 1000");
+
                    return;
                }
+
                }
 
                else if (input=='2'){
@@ -72,11 +85,16 @@ public class K_B_C {
                     System.out.println("C. jdk version");
                     System.out.println("D. method");
                     char ans1=sc.next().charAt(0);
+
                     if(ans1=='A'){
                         System.out.println("correct answer");
-                    }else{
+                        l2=1;
+                    }
+                    else{
                         System.out.println("wrong answer!!");
                         System.out.print("your game has been quit!!");
+                        System.out.println("thankyou Mr./Mrs."+name+" for playing");
+                        System.out.println("your score= 1000");
 
                         return;
                     }}
@@ -90,28 +108,29 @@ public class K_B_C {
                      System.out.println("C. storage ");
                      System.out.println("D. nothing");
                     char ans2=sc.next().charAt(0);
+
                     if(ans2=='A'){
                         System.out.println("correct answer");
+                        l3=1;
                     }
                     else{
                         System.out.println("wrong answer!!!");
                         System.out.print("your game has been quit!!");
+                        System.out.println("thankyou Mr./Mrs."+name+" for playing");
+                        System.out.println("your score= 1000");
 
                         return;
                     }
+
                    }
-
-
-
-
-
-
 
         }
         else
         {
             System.out.println("wrong answer");
             System.out.print("your game has been quit!!");
+            System.out.println("thankyou Mr./Mrs."+name+" for playing");
+            System.out.println("your score= 1000");
             return;
         }
 
@@ -125,9 +144,15 @@ public class K_B_C {
         System.out.println("D. none of them");
         System.out.println();
         System.out.println("life lines- " );
-        System.out.println("press 1 to use 50/50");
-        System.out.println("press 2 to use flip the ques");
-        System.out.println("press 3 to use hint ");
+        if (l1==0){
+             System.out.println(lifeline1);
+        }
+        if (l2==0){
+            System.out.println(lifeline2);
+        }
+        if (l3==0){
+            System.out.println(lifeline3);
+        }
 
         char input2=sc.next().charAt(0);
 
@@ -136,7 +161,7 @@ public class K_B_C {
         }
 
         else if (input2=='1' || input2=='2' || input2=='3') {
-            if(input2=='1')
+            if(input2=='1' || l1==0)
             {
                 System.out.println("B. final");
                 System.out.println("C. Static");
@@ -152,13 +177,15 @@ public class K_B_C {
                 {
                     System.out.println("wrong answer");
                     System.out.print("your game has been quit!!");
+                    System.out.println("thankyou Mr./Mrs."+name+" for playing");
+                    System.out.println("your score= 2000");
 
                     return;
                 }
 
             }
 
-            else if (input2=='2'){
+            else if (input2=='2' || l2<=0){
                 System.out.println("ques : how many specifier in java ?");
                 System.out.println("A. 1");
                 System.out.println("B. 2");
@@ -170,13 +197,15 @@ public class K_B_C {
                 }else{
                     System.out.println("wrong answer!!");
                     System.out.print("your game has been quit!!");
+                    System.out.println("thankyou Mr./Mrs."+name+" for playing");
+                    System.out.println("your score= 2000");
 
                     return;
                 }
 
 
             }
-            else if (input2=='3') {
+            else if (input2=='3' || l3==0) {
                 System.out.println("Hint: not an access specifier and sometimes used in main method-");
                 System.out.println("A. private");
                 System.out.println("B. final");
@@ -185,9 +214,12 @@ public class K_B_C {
                 char ans1 = sc.next().charAt(0);
                 if (ans1 == 'C') {
                     System.out.println("correct answer");
+                    l3=1;
                 } else {
                     System.out.println("wrong answer!!!");
                     System.out.print("your game has been quit!!");
+                    System.out.println("thankyou Mr./Mrs."+name+" for playing");
+                    System.out.println("your score= 2000");
 
                     return;
                 }
@@ -198,6 +230,8 @@ public class K_B_C {
         }else {
             System.out.print("wrong answer!!!");
             System.out.print("your game has been quit!!");
+            System.out.println("thankyou Mr./Mrs."+name+" for playing");
+            System.out.println("your score= 2000");
 
             return;
         }
@@ -213,18 +247,24 @@ public class K_B_C {
         System.out.println("D. 30");
         System.out.println();
         System.out.println("life lines- " );
-        System.out.println("press 1 to use 50/50");
-        System.out.println("press 2 to use flip the ques");
-        System.out.println("press 3 to use hint ");
+        if (l1==0){
+            System.out.println(lifeline1);
+        }
+        if (l2==0){
+            System.out.println(lifeline2);
+        }
+        if (l3==0){
+            System.out.println(lifeline3);
+        }
 
         char input3=sc.next().charAt(0);
 
-        if(input3=='A'){
+        if(input3=='A' ){
             System.out.println("correct answer");
         }
 
         else if (input3=='1' || input3=='2' || input3=='3') {
-            if(input3=='1')
+            if(input3=='1' || l1==0)
             {
                 System.out.println("A. 65");
                 System.out.println("C. A");
@@ -233,19 +273,22 @@ public class K_B_C {
                 if(ip=='A')
                 {
                     System.out.println("correct Answer");
+                    l1=1;
                 }
 
                 else
                 {
                     System.out.println("wrong answer");
                     System.out.print("your game has been quit!!");
+                    System.out.println("thankyou Mr./Mrs."+name+" for playing");
+                    System.out.println("your score= 3000");
 
                     return;
                 }
 
             }
 
-            else if (input3=='2'){
+            else if (input3=='2' || l2==0){
                 System.out.println("Ques: for initialization of loop which type of data is used ?");
                 System.out.println("A. int");
                 System.out.println("B. float");
@@ -254,17 +297,20 @@ public class K_B_C {
                 char ans1=sc.next().charAt(0);
                 if(ans1=='A'){
                     System.out.println("correct answer");
+                    l2=1;
                 }else{
                     System.out.println("wrong answer!!");
                     System.out.print("your game has been quit!!");
+                    System.out.println("thankyou Mr./Mrs."+name+" for playing");
+                    System.out.println("your score= 3000");
 
                     return;
                 }
 
 
             }
-            else if (input3=='3') {
-                System.out.println("Hint: answer will be int value-");
+            else if (input3=='3'||l3<=0) {
+                System.out.println("Hint: Concartination -");
                 System.out.println("A. 65");
                 System.out.println("B. 11");
                 System.out.println("C. A ");
@@ -272,9 +318,12 @@ public class K_B_C {
                 char ans1=sc.next().charAt(0);
                 if(ans1=='A'){
                     System.out.println("correct answer");
+                    l3=1;
                 }else{
                     System.out.println("wrong answer!!!");
                     System.out.print("your game has been quit!!");
+                    System.out.println("thankyou Mr./Mrs."+name+" for playing");
+                    System.out.println("your score= 3000");
 
                     return;
                 }
@@ -287,6 +336,9 @@ public class K_B_C {
         else {
             System.out.print("wrong answer!!!");
             System.out.print("your game has been quit!!");
+            System.out.println("thankyou Mr./Mrs."+name+" for playing");
+            System.out.println("your score= 3000");
+
 
             return;
         }
@@ -303,18 +355,23 @@ public class K_B_C {
         System.out.println("D. none of them");
         System.out.println();
         System.out.println("life lines- " );
-        System.out.println("press 1 to use 50/50");
-        System.out.println("press 2 to use flip the ques");
-        System.out.println("press 3 to use hint ");
-
+        if (l1==0){
+            System.out.println(lifeline1);
+        }
+        if (l2==0){
+            System.out.println(lifeline2);
+        }
+        if (l3==0){
+            System.out.println(lifeline3);
+        }
         char input_3=sc.next().charAt(0);
 
-        if(input_3=='C'){
+        if(input_3=='A'){
             System.out.println("correct answer");
         }
 
         else if (input_3=='1' || input_3=='2' || input_3=='3') {
-            if(input_3=='1')
+            if(input_3=='1' || l1<=0)
             {
                 System.out.println("A. Visiblity");
                 System.out.println("C. for declaring variable");
@@ -323,12 +380,15 @@ public class K_B_C {
                 if(ip=='A')
                 {
                     System.out.println("correct Answer");
+                    l1=1;
                 }
 
                 else
                 {
                     System.out.println("wrong answer");
                     System.out.print("your game has been quit!!");
+                    System.out.println("thankyou Mr./Mrs."+name+" for playing");
+                    System.out.println("your score= 4000");
 
                     return;
                 }
@@ -344,9 +404,12 @@ public class K_B_C {
                 char ans1=sc.next().charAt(0);
                 if(ans1=='A'){
                     System.out.println("correct answer");
+                    l2=1;
                 }else{
                     System.out.println("wrong answer!!");
                     System.out.println("your game have been quit!!!!");
+                    System.out.println("thankyou Mr./Mrs."+name+" for playing");
+                    System.out.println("your score= 4000");
 
                     return;
                 }
@@ -361,10 +424,14 @@ public class K_B_C {
                 char ans1=sc.next().charAt(0);
                 if(ans1=='A'){
                     System.out.println("correct answer");
+                    l3=1;
+
                 }
                 else{
                     System.out.println("wrong answer!!!");
                     System.out.println("your game have been quit!!!!");
+                    System.out.println("thankyou Mr./Mrs."+name+" for playing");
+                    System.out.println("your score= 4000");
                     return;
                 }
 
@@ -376,11 +443,114 @@ public class K_B_C {
         else{
             System.out.print("wrong answer!!!");
             System.out.println("your game have been quit!!!!");
+            System.out.println("thankyou Mr./Mrs."+name+" for playing");
+            System.out.println("your score= 4000");
 
             return;
         }
 
+        //ques 5
+        System.out.println();
+        System.out.println("Question 5 : which enviroment variable is used to set java path?");
+        System.out.println("A. MAVEN_Path");
+        System.out.println("B. javaPATH");
+        System.out.println("C. java");
+        System.out.println("D. JAVA_HOME");
+        System.out.println();
+        System.out.println("life lines- " );
+        if (l1==0){
+            System.out.println(lifeline1);
+        }
+        if (l2==0){
+            System.out.println(lifeline2);
+        }
+        if (l3==0){
+            System.out.println(lifeline3);
+        }
+        char input_5=sc.next().charAt(0);
+
+        if(input_3=='D'){
+            System.out.println("correct answer");
+        }
+
+        else if (input_5=='1' || input_5=='2' || input_5=='3') {
+            if(input_5=='1' || l1<=0)
+            {
+                System.out.println("B. javaPATH");
+                System.out.println("D. JAVA_HOME");
+                char ip=sc.next().charAt(0);
+
+                if(ip=='D')
+                {
+                    System.out.println("correct Answer");
+                    l1=1;
+                }
+
+                else
+                {
+                    System.out.println("wrong answer");
+                    System.out.print("your game has been quit!!");
+                    System.out.println("thankyou Mr./Mrs."+name+" for playing");
+                    System.out.println("your score= 5000");
+
+                    return;
+                }
+
+            }
+
+            else if (input_5=='2'){
+                System.out.println("Question : which of the following is not a java feature ?");
+                System.out.println("options are--");
+                System.out.println("A. Object-Oriented");
+                System.out.println("B. uses of pointer");
+                System.out.println("C. Portable");
+                System.out.println("D. Dynamic and Extensible");
+                char ans1=sc.next().charAt(0);
+                if(ans1=='B'){
+                    System.out.println("correct answer");
+                    l2=1;
+                }else{
+                    System.out.println("wrong answer!!");
+                    System.out.println("your game have been quit!!!!");
+                    System.out.println("thankyou Mr./Mrs."+name+" for playing");
+                    System.out.println("your score= 5000");
+
+                    return;
+                }
+
+            }
+            else if (input_5=='3') {
+                System.out.println("Hint: The variable is used to specify the location of the JAVA DEVELOPMENT KIT (jdk)");
+                System.out.println("A. MAVEN_Path");
+                System.out.println("B. javaPATH");
+                System.out.println("C. java");
+                System.out.println("D. JAVA_HOME");
+                char ans1=sc.next().charAt(0);
+                if(ans1=='D'){
+                    System.out.println("correct answer");
+                    l3=1;
+
+                }
+                else{
+                    System.out.println("wrong answer!!!");
+                    System.out.println("your game have been quit!!!!");
+                    System.out.println("thankyou Mr./Mrs."+name+" for playing");
+                    System.out.println("your score= 5000");
+                    return;
+                }
+
+
+            }
+
+
+        }
+        else{
+            System.out.print("wrong answer!!!");
+            System.out.println("your game have been quit!!!!");
+            System.out.println("thankyou Mr./Mrs."+name+" for playing");
+            System.out.println("your score= 5000");
+
+            return;
+        }
 
 }}
-
-
