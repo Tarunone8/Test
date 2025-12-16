@@ -50,6 +50,7 @@ public  class K_B_C {
         System.out.println(lifeline3);
 
        char  input= sc.next().charAt(0);
+        input=Character.toUpperCase(input);
 
         if(input=='A'){
             System.out.println("||correct answer||");
@@ -60,6 +61,8 @@ public  class K_B_C {
                 System.out.println("A. address");
                 System.out.println("B. keyword");
                 char ip=sc.next().charAt(0);
+                ip=Character.toUpperCase(ip);
+                
 
                if(ip=='A')
                {
@@ -85,6 +88,7 @@ public  class K_B_C {
                     System.out.println("C. jdk version");
                     System.out.println("D. method");
                     char ans1=sc.next().charAt(0);
+                   ans1=Character.toUpperCase(ans1);
 
                     if(ans1=='A'){
                         System.out.println("correct answer");
@@ -108,6 +112,7 @@ public  class K_B_C {
                      System.out.println("C. storage ");
                      System.out.println("D. nothing");
                     char ans2=sc.next().charAt(0);
+                     ans2=Character.toUpperCase(ans2);
 
                     if(ans2=='A'){
                         System.out.println("correct answer");
@@ -155,6 +160,7 @@ public  class K_B_C {
         }
 
         char input2=sc.next().charAt(0);
+        input2=Character.toUpperCase(input2);
 
         if(input2=='C'){
             System.out.println("correct answer");
@@ -192,6 +198,7 @@ public  class K_B_C {
                 System.out.println("C. 3");
                 System.out.println("D. 4");
                 char ans1=sc.next().charAt(0);
+                ans1=Character.toUpperCase(ans1);
                 if(ans1=='D'){
                     System.out.println("correct answer");
                 }else{
@@ -212,6 +219,7 @@ public  class K_B_C {
                 System.out.println("C. static ");
                 System.out.println("D. none of them");
                 char ans1 = sc.next().charAt(0);
+                ans1=Character.toUpperCase(ans1);
                 if (ans1 == 'C') {
                     System.out.println("correct answer");
                     l3=1;
@@ -258,6 +266,7 @@ public  class K_B_C {
         }
 
         char input3=sc.next().charAt(0);
+        input3=Character.toUpperCase(input3);
 
         if(input3=='A' ){
             System.out.println("correct answer");
@@ -269,6 +278,7 @@ public  class K_B_C {
                 System.out.println("A. 65");
                 System.out.println("C. A");
                 char ip=sc.next().charAt(0);
+                ip=Character.toUpperCase(ip);
 
                 if(ip=='A')
                 {
@@ -295,6 +305,7 @@ public  class K_B_C {
                 System.out.println("C. char");
                 System.out.println("D. double");
                 char ans1=sc.next().charAt(0);
+                ans1=Character.toUpperCase(ans1);
                 if(ans1=='A'){
                     System.out.println("correct answer");
                     l2=1;
@@ -316,6 +327,7 @@ public  class K_B_C {
                 System.out.println("C. A ");
                 System.out.println("D. 30");
                 char ans1=sc.next().charAt(0);
+                ans1=Character.toUpperCase(ans1);
                 if(ans1=='A'){
                     System.out.println("correct answer");
                     l3=1;
@@ -365,6 +377,7 @@ public  class K_B_C {
             System.out.println(lifeline3);
         }
         char input_3=sc.next().charAt(0);
+        input_3=Character.toUpperCase(input_3);
 
         if(input_3=='A'){
             System.out.println("correct answer");
@@ -402,6 +415,7 @@ public  class K_B_C {
                 System.out.println("C. exit");
                 System.out.println("D. quit");
                 char ans1=sc.next().charAt(0);
+                ans1=Character.toUpperCase(ans1);
                 if(ans1=='A'){
                     System.out.println("correct answer");
                     l2=1;
@@ -422,6 +436,7 @@ public  class K_B_C {
                 System.out.println("C. for declaring variable");
                 System.out.println("D. none of them");
                 char ans1=sc.next().charAt(0);
+                ans1=Character.toUpperCase(ans1);
                 if(ans1=='A'){
                     System.out.println("correct answer");
                     l3=1;
@@ -468,6 +483,7 @@ public  class K_B_C {
             System.out.println(lifeline3);
         }
         char input_5=sc.next().charAt(0);
+        input_5=Character.toUpperCase(input_5);
 
         if(input_3=='D'){
             System.out.println("correct answer");
@@ -479,6 +495,7 @@ public  class K_B_C {
                 System.out.println("B. javaPATH");
                 System.out.println("D. JAVA_HOME");
                 char ip=sc.next().charAt(0);
+                ip=Character.toUpperCase(ip);
 
                 if(ip=='D')
                 {
@@ -506,6 +523,7 @@ public  class K_B_C {
                 System.out.println("C. Portable");
                 System.out.println("D. Dynamic and Extensible");
                 char ans1=sc.next().charAt(0);
+                ans1=Character.toUpperCase(ans1);
                 if(ans1=='B'){
                     System.out.println("correct answer");
                     l2=1;
@@ -526,6 +544,7 @@ public  class K_B_C {
                 System.out.println("C. java");
                 System.out.println("D. JAVA_HOME");
                 char ans1=sc.next().charAt(0);
+                ans1=Character.toUpperCase(ans1);
                 if(ans1=='D'){
                     System.out.println("correct answer");
                     l3=1;
@@ -554,3 +573,4 @@ public  class K_B_C {
         }
 
 }}
+
