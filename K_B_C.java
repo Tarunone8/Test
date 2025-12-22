@@ -1,3 +1,4 @@
+
 package K_B_C;
 import java.util.Scanner;
 public  class K_B_C {
@@ -49,12 +50,12 @@ public  class K_B_C {
         System.out.println(lifeline2);
         System.out.println(lifeline3);
 
-       char  input= sc.next().charAt(0);
+        char  input= sc.next().charAt(0);
         input=Character.toUpperCase(input);
 
         if(input=='A'){
             System.out.println("||correct answer||");
-                    }
+        }
         else if (input=='1' || input=='2' || input=='3') {
             if(input=='1')
             {
@@ -62,72 +63,72 @@ public  class K_B_C {
                 System.out.println("B. keyword");
                 char ip=sc.next().charAt(0);
                 ip=Character.toUpperCase(ip);
-                
 
-               if(ip=='A')
-               {
+
+                if(ip=='A')
+                {
                     System.out.println("correct Answer");
                     l1=1;
 
-               }
-               else {
-                   System.out.print("wrong answer!!!!!");
-                   System.out.print("your game has been quit!!!!!");
-                   System.out.println("thankyou Mr./Mrs."+name+" for playing");
-                   System.out.println("your score= 1000");
+                }
+                else {
+                    System.out.print("wrong answer!!!!!");
+                    System.out.print("your game has been quit!!!!!");
+                    System.out.println("thankyou Mr./Mrs."+name+" for playing");
+                    System.out.println("your score= 1000");
 
-                   return;
-               }
+                    return;
+                }
 
-               }
+            }
 
-               else if (input=='2'){
-                    System.out.println("ques: what is jit ?");
-                    System.out.println("A. compiler");
-                    System.out.println("B. keyword");
-                    System.out.println("C. jdk version");
-                    System.out.println("D. method");
-                    char ans1=sc.next().charAt(0);
-                   ans1=Character.toUpperCase(ans1);
+            else if (input=='2'){
+                System.out.println("ques: what is jit ?");
+                System.out.println("A. compiler");
+                System.out.println("B. keyword");
+                System.out.println("C. jdk version");
+                System.out.println("D. method");
+                char ans1=sc.next().charAt(0);
+                ans1=Character.toUpperCase(ans1);
 
-                    if(ans1=='A'){
-                        System.out.println("correct answer");
-                        l2=1;
-                    }
-                    else{
-                        System.out.println("wrong answer!!");
-                        System.out.print("your game has been quit!!");
-                        System.out.println("thankyou Mr./Mrs."+name+" for playing");
-                        System.out.println("your score= 1000");
+                if(ans1=='A'){
+                    System.out.println("correct answer");
+                    l2=1;
+                }
+                else{
+                    System.out.println("wrong answer!!");
+                    System.out.print("your game has been quit!!");
+                    System.out.println("thankyou Mr./Mrs."+name+" for playing");
+                    System.out.println("your score= 1000");
 
-                        return;
-                    }}
+                    return;
+                }}
 
 
-                 if (input=='3') {
-                    System.out.println("Hint: word which shows location");
-                     System.out.println("options are--");
-                     System.out.println("A. addrrss");
-                     System.out.println("B. keyword");
-                     System.out.println("C. storage ");
-                     System.out.println("D. nothing");
-                    char ans2=sc.next().charAt(0);
-                     ans2=Character.toUpperCase(ans2);
+            if (input=='3') {
+                System.out.println("Hint: word which shows location");
+                System.out.println("options are--");
+                System.out.println("A. addrrss");
+                System.out.println("B. keyword");
+                System.out.println("C. storage ");
+                System.out.println("D. nothing");
+                char ans2=sc.next().charAt(0);
+                ans2=Character.toUpperCase(ans2);
 
-                    if(ans2=='A'){
-                        System.out.println("correct answer");
-                        l3=1;
-                    }
-                    else{
-                        System.out.println("wrong answer!!!");
-                        System.out.print("your game has been quit!!");
-                        System.out.println("thankyou Mr./Mrs."+name+" for playing");
-                        System.out.println("your score= 1000");
+                if(ans2=='A'){
+                    System.out.println("correct answer");
+                    l3=1;
+                }
+                else{
+                    System.out.println("wrong answer!!!");
+                    System.out.print("your game has been quit!!");
+                    System.out.println("thankyou Mr./Mrs."+name+" for playing");
+                    System.out.println("your score= 1000");
 
-                        return;
-                    }
+                    return;
+                }
 
-                   }
+            }
 
         }
         else
@@ -150,7 +151,7 @@ public  class K_B_C {
         System.out.println();
         System.out.println("life lines- " );
         if (l1==0){
-             System.out.println(lifeline1);
+            System.out.println(lifeline1);
         }
         if (l2==0){
             System.out.println(lifeline2);
@@ -167,15 +168,19 @@ public  class K_B_C {
         }
 
         else if (input2=='1' || input2=='2' || input2=='3') {
-            if(input2=='1' || l1==0)
+
+            if(input2=='1' )
             {
                 System.out.println("B. final");
                 System.out.println("C. Static");
                 char ip=sc.next().charAt(0);
+                ip=Character.toUpperCase(ip);
+
 
                 if(ip=='C')
                 {
                     System.out.println("correct Answer");
+                    l1=1;
 
                 }
 
@@ -191,7 +196,7 @@ public  class K_B_C {
 
             }
 
-            else if (input2=='2' || l2<=0){
+            else if (input2=='2'){
                 System.out.println("ques : how many specifier in java ?");
                 System.out.println("A. 1");
                 System.out.println("B. 2");
@@ -199,8 +204,11 @@ public  class K_B_C {
                 System.out.println("D. 4");
                 char ans1=sc.next().charAt(0);
                 ans1=Character.toUpperCase(ans1);
+
                 if(ans1=='D'){
                     System.out.println("correct answer");
+                    l2=1;
+
                 }else{
                     System.out.println("wrong answer!!");
                     System.out.print("your game has been quit!!");
@@ -212,7 +220,7 @@ public  class K_B_C {
 
 
             }
-            else if (input2=='3' || l3==0) {
+            else {
                 System.out.println("Hint: not an access specifier and sometimes used in main method-");
                 System.out.println("A. private");
                 System.out.println("B. final");
@@ -384,7 +392,7 @@ public  class K_B_C {
         }
 
         else if (input_3=='1' || input_3=='2' || input_3=='3') {
-            if(input_3=='1' || l1<=0)
+            if(input_3=='1' )
             {
                 System.out.println("A. Visiblity");
                 System.out.println("C. for declaring variable");
@@ -490,7 +498,7 @@ public  class K_B_C {
         }
 
         else if (input_5=='1' || input_5=='2' || input_5=='3') {
-            if(input_5=='1' || l1<=0)
+            if(input_5=='1')
             {
                 System.out.println("B. javaPATH");
                 System.out.println("D. JAVA_HOME");
@@ -572,5 +580,5 @@ public  class K_B_C {
             return;
         }
 
-}}
+    }}
 
