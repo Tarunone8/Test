@@ -326,9 +326,8 @@ public  class K_B_C {
                     return;
                 }
 
-
             }
-            else if (input3=='3'||l3<=0) {
+            else if (input3=='3') {
                 System.out.println("Hint: Concartination -");
                 System.out.println("A. 65");
                 System.out.println("B. 11");
@@ -359,8 +358,8 @@ public  class K_B_C {
             System.out.println("thankyou Mr./Mrs."+name+" for playing");
             System.out.println("your score= 3000");
 
-
             return;
+
         }
 
 
@@ -493,7 +492,7 @@ public  class K_B_C {
         char input_5=sc.next().charAt(0);
         input_5=Character.toUpperCase(input_5);
 
-        if(input_3=='D'){
+        if(input_5=='D'){
             System.out.println("correct answer");
         }
 
