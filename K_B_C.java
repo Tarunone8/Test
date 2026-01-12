@@ -20,8 +20,6 @@ public  class K_B_C {
         sc.nextLine();  // waits until you press Enter
         System.out.println("enter your name= ");
         String name= sc.nextLine();
-        System.out.println("Press Enter to continue...");
-        sc.nextLine();  // waits until you press Enter
 
         System.out.println("read instructions carefully!!!!");
         System.out.println("1. total no. of Ques = 5");
@@ -75,7 +73,7 @@ public  class K_B_C {
                     System.out.print("wrong answer!!!!!");
                     System.out.print("your game has been quit!!!!!");
                     System.out.println("thankyou Mr./Mrs."+name+" for playing");
-                    System.out.println("your score= 1000");
+                    System.out.println("your score= 00");
 
                     return;
                 }
@@ -99,7 +97,7 @@ public  class K_B_C {
                     System.out.println("wrong answer!!");
                     System.out.print("your game has been quit!!");
                     System.out.println("thankyou Mr./Mrs."+name+" for playing");
-                    System.out.println("your score= 1000");
+                    System.out.println("your score= 00");
 
                     return;
                 }}
@@ -123,7 +121,7 @@ public  class K_B_C {
                     System.out.println("wrong answer!!!");
                     System.out.print("your game has been quit!!");
                     System.out.println("thankyou Mr./Mrs."+name+" for playing");
-                    System.out.println("your score= 1000");
+                    System.out.println("your score= 00");
 
                     return;
                 }
@@ -136,7 +134,7 @@ public  class K_B_C {
             System.out.println("wrong answer");
             System.out.print("your game has been quit!!");
             System.out.println("thankyou Mr./Mrs."+name+" for playing");
-            System.out.println("your score= 1000");
+            System.out.println("your score= 00");
             return;
         }
 
@@ -189,7 +187,7 @@ public  class K_B_C {
                     System.out.println("wrong answer");
                     System.out.print("your game has been quit!!");
                     System.out.println("thankyou Mr./Mrs."+name+" for playing");
-                    System.out.println("your score= 2000");
+                    System.out.println("your score= 1000");
 
                     return;
                 }
@@ -213,7 +211,7 @@ public  class K_B_C {
                     System.out.println("wrong answer!!");
                     System.out.print("your game has been quit!!");
                     System.out.println("thankyou Mr./Mrs."+name+" for playing");
-                    System.out.println("your score= 2000");
+                    System.out.println("your score= 1000");
 
                     return;
                 }
@@ -235,7 +233,7 @@ public  class K_B_C {
                     System.out.println("wrong answer!!!");
                     System.out.print("your game has been quit!!");
                     System.out.println("thankyou Mr./Mrs."+name+" for playing");
-                    System.out.println("your score= 2000");
+                    System.out.println("your score= 1000");
 
                     return;
                 }
@@ -247,7 +245,7 @@ public  class K_B_C {
             System.out.print("wrong answer!!!");
             System.out.print("your game has been quit!!");
             System.out.println("thankyou Mr./Mrs."+name+" for playing");
-            System.out.println("your score= 2000");
+            System.out.println("your score= 1000");
 
             return;
         }
@@ -281,7 +279,7 @@ public  class K_B_C {
         }
 
         else if (input3=='1' || input3=='2' || input3=='3') {
-            if(input3=='1' || l1==0)
+            if(input3=='1')
             {
                 System.out.println("A. 65");
                 System.out.println("C. A");
@@ -299,14 +297,14 @@ public  class K_B_C {
                     System.out.println("wrong answer");
                     System.out.print("your game has been quit!!");
                     System.out.println("thankyou Mr./Mrs."+name+" for playing");
-                    System.out.println("your score= 3000");
+                    System.out.println("your score= 2000");
 
                     return;
                 }
 
             }
 
-            else if (input3=='2' || l2==0){
+             else if (input3=='2'){
                 System.out.println("Ques: for initialization of loop which type of data is used ?");
                 System.out.println("A. int");
                 System.out.println("B. float");
@@ -321,13 +319,13 @@ public  class K_B_C {
                     System.out.println("wrong answer!!");
                     System.out.print("your game has been quit!!");
                     System.out.println("thankyou Mr./Mrs."+name+" for playing");
-                    System.out.println("your score= 3000");
+                    System.out.println("your score= 2000");
 
                     return;
                 }
 
             }
-            else if (input3=='3') {
+             else if(input3=='3') {
                 System.out.println("Hint: Concartination -");
                 System.out.println("A. 65");
                 System.out.println("B. 11");
@@ -342,7 +340,7 @@ public  class K_B_C {
                     System.out.println("wrong answer!!!");
                     System.out.print("your game has been quit!!");
                     System.out.println("thankyou Mr./Mrs."+name+" for playing");
-                    System.out.println("your score= 3000");
+                    System.out.println("your score= 2000");
 
                     return;
                 }
@@ -356,7 +354,7 @@ public  class K_B_C {
             System.out.print("wrong answer!!!");
             System.out.print("your game has been quit!!");
             System.out.println("thankyou Mr./Mrs."+name+" for playing");
-            System.out.println("your score= 3000");
+            System.out.println("your score= 2000");
 
             return;
 
@@ -383,19 +381,20 @@ public  class K_B_C {
         if (l3==0){
             System.out.println(lifeline3);
         }
-        char input_3=sc.next().charAt(0);
-        input_3=Character.toUpperCase(input_3);
+        char input_4=sc.next().charAt(0);
+        input_4=Character.toUpperCase(input_4);
 
-        if(input_3=='A'){
+        if(input_4=='A'){
             System.out.println("correct answer");
         }
 
-        else if (input_3=='1' || input_3=='2' || input_3=='3') {
-            if(input_3=='1' )
+        else if (input_4=='1' || input_4=='2' || input_4=='3') {
+            if(input_4=='1' )
             {
                 System.out.println("A. Visiblity");
                 System.out.println("C. for declaring variable");
                 char ip=sc.next().charAt(0);
+                ip=Character.toUpperCase(ip);
 
                 if(ip=='A')
                 {
@@ -408,14 +407,14 @@ public  class K_B_C {
                     System.out.println("wrong answer");
                     System.out.print("your game has been quit!!");
                     System.out.println("thankyou Mr./Mrs."+name+" for playing");
-                    System.out.println("your score= 4000");
+                    System.out.println("your score= 3000");
 
                     return;
                 }
 
             }
 
-            else if (input_3=='2'){
+            else if (input_4=='2'){
                 System.out.println("Ques= loop control statement that exits loop ?");
                 System.out.println("A. break");
                 System.out.println("B. stop");
@@ -430,13 +429,13 @@ public  class K_B_C {
                     System.out.println("wrong answer!!");
                     System.out.println("your game have been quit!!!!");
                     System.out.println("thankyou Mr./Mrs."+name+" for playing");
-                    System.out.println("your score= 4000");
+                    System.out.println("your score= 3000");
 
                     return;
                 }
 
             }
-            else if (input_3=='3') {
+            else if (input_4=='3') {
                 System.out.println("Hint: something which is not transparent");
                 System.out.println("A. visiblity");
                 System.out.println("B. voltality");
@@ -453,7 +452,7 @@ public  class K_B_C {
                     System.out.println("wrong answer!!!");
                     System.out.println("your game have been quit!!!!");
                     System.out.println("thankyou Mr./Mrs."+name+" for playing");
-                    System.out.println("your score= 4000");
+                    System.out.println("your score= 3000");
                     return;
                 }
 
@@ -466,7 +465,7 @@ public  class K_B_C {
             System.out.print("wrong answer!!!");
             System.out.println("your game have been quit!!!!");
             System.out.println("thankyou Mr./Mrs."+name+" for playing");
-            System.out.println("your score= 4000");
+            System.out.println("your score= 3000");
 
             return;
         }
@@ -515,7 +514,7 @@ public  class K_B_C {
                     System.out.println("wrong answer");
                     System.out.print("your game has been quit!!");
                     System.out.println("thankyou Mr./Mrs."+name+" for playing");
-                    System.out.println("your score= 5000");
+                    System.out.println("your score= 4000");
 
                     return;
                 }
@@ -538,7 +537,7 @@ public  class K_B_C {
                     System.out.println("wrong answer!!");
                     System.out.println("your game have been quit!!!!");
                     System.out.println("thankyou Mr./Mrs."+name+" for playing");
-                    System.out.println("your score= 5000");
+                    System.out.println("your score= 4000");
 
                     return;
                 }
@@ -561,7 +560,7 @@ public  class K_B_C {
                     System.out.println("wrong answer!!!");
                     System.out.println("your game have been quit!!!!");
                     System.out.println("thankyou Mr./Mrs."+name+" for playing");
-                    System.out.println("your score= 5000");
+                    System.out.println("your score= 4000");
                     return;
                 }
 
@@ -574,10 +573,14 @@ public  class K_B_C {
             System.out.print("wrong answer!!!");
             System.out.println("your game have been quit!!!!");
             System.out.println("thankyou Mr./Mrs."+name+" for playing");
-            System.out.println("your score= 5000");
+            System.out.println("your score= 4000");
 
             return;
         }
+
+
+        System.out.println("thankyou Mr./Mrs."+name+" for playing");
+        System.out.println("your score= 5000");
 
     }}
 
