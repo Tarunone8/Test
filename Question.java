@@ -48,7 +48,7 @@ public static void question(String question,String []options,char answer,String 
             else
             {
                 System.out.println("wrong answer");
-                System.out.print("your game has been quit!!");
+                System.out.println("your game has been quit!!");
                 System.out.println("your score: "+score);
                 System.exit(0);
             }
@@ -66,7 +66,7 @@ public static void question(String question,String []options,char answer,String 
                 l2++;
             }else{
                 System.out.println("wrong answer!!");
-                System.out.print("your game has been quit!!");
+                System.out.println("your game has been quit!!");
                 System.out.println("your score: "+score);
                 System.exit(0);
             }
@@ -83,7 +83,7 @@ public static void question(String question,String []options,char answer,String 
                 l3++;
             }else{
                 System.out.println("wrong answer!!!");
-                System.out.print("your game has been quit!!");
+                System.out.println("your game has been quit!!");
                 System.out.println("your score: "+score);
                 System.exit(0);
             }
@@ -91,11 +91,9 @@ public static void question(String question,String []options,char answer,String 
     }
     else{
         System.out.println("wrong answer");
-        System.out.print("your game has been quit!!");
+        System.out.println("your game has been quit!!");
         System.out.println("your score: "+score);
         System.exit(0);
     }
-    System.out.println("your score: "+score);
-    System.out.println("||Thankyour for playing|| ");
 }
 }
